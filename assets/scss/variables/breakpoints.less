@@ -1,0 +1,23 @@
+//**********BREAKPOINTS
+@global-breakpoint__main: 1170px;
+@global-breakpoint__md: 767px;
+@global-breakpoint__sm: 479px;
+@global-breakpoint__xs: 320px;
+
+
+//**********MEDIA-QUERIES
+//***** @media @media-query
+@lg-screen: ~"(max-width: @{global-breakpoint__main})";
+@md-screen: ~"(max-width: @{global-breakpoint__md})";
+@sm-screen: ~"(max-width: @{global-breakpoint__sm})";
+@xs-screen: ~"(max-width: @{global-breakpoint__xs})";
+
+
+//grid-settings
+@global-gird__column_number: 12;
+@global-gird__gutter_w: 30px;
+@sizes:
+~'xs' @global-breakpoint__xs,
+~'sm' @global-breakpoint__sm,
+~'md' @global-breakpoint__md,
+~'lg' @global-breakpoint__main;

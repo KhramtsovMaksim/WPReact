@@ -1,0 +1,17 @@
+@primary-gradient__start: @global-color__primary_ll;
+@primary-gradient__end: @global-color__primary_d_d;
+@secondary-gradient__start: @global-color__secondary_ll;
+@secondary-gradient__end: @global-color__secondary;
+.primary-gradient-for-animation() {
+  .linear-gradient_mid-color(@primary-gradient__start 0%, @primary-gradient__end 50%, @primary-gradient__end 100%);
+}
+.primary-gradient() {
+  .linear-gradient(@primary-gradient__start, @primary-gradient__end);
+}
+
+.secondary-gradient-for-animation() {
+  .linear-gradient_mid-color(@secondary-gradient__start 0%, @secondary-gradient__end 50%, @secondary-gradient__end 100%);
+}
+.secondary-gradient() {
+  .linear-gradient(@secondary-gradient__start, @secondary-gradient__end);
+}

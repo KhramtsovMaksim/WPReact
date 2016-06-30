@@ -1,0 +1,6 @@
+$theme-dafault__bg: $global-color__dark;
+$theme-dafault__text: $global-color__light;
+.theme {
+  background: $theme-dafault__bg;
+  color: $theme-dafault__text;
+}
